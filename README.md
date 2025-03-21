@@ -58,6 +58,14 @@ Fork说明
 ```bash
 git clone --recursive https://github.com/happyharryh/gost.git
 ```
+交叉编译arm64
+```
+env GOOS=linux GOARCH=arm64 go build ./cmd/gost
+```
+交叉编译amd64
+```
+env GOOS=windows GOARCH=amd64 go build ./cmd/gost
+```
 
 在Windows平台克隆后，还需要手动重建一次软链接
 
